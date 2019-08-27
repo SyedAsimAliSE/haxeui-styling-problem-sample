@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project version="2">
+  <!-- Output SWF options -->
+  <output>
+    <movie outputType="CustomBuild" />
+    <movie input="" />
+    <movie path="project.xml" />
+    <movie fps="0" />
+    <movie width="0" />
+    <movie height="0" />
+    <movie version="0" />
+    <movie minorVersion="0" />
+    <movie platform="Lime" />
+    <movie background="#FFFFFF" />
+    <movie preferredSDK=";3.1.3;" />
+  </output>
+  <!-- Other classes to be compiled into your SWF -->
+  <classpaths>
+    <class path="E:\SDKS\HAXE\HaxeToolkit\haxe\lib\lime\7,6,0\src" />
+    <class path="E:\SDKS\HAXE\HaxeToolkit\haxe\lib\actuate\1,8,9\src" />
+    <class path="E:\SDKS\HAXE\HaxeToolkit\haxe\lib\singletoninterface\1,1,2" />
+    <class path="E:\SDKS\HAXE\HaxeUI\haxeui-openfl" />
+    <class path="E:\SDKS\HAXE\HaxeUI\haxeui-core" />
+    <class path="E:\SDKS\HAXE\HaxeToolkit\haxe\lib\hscript\2,3,0" />
+    <class path="E:\SDKS\HAXE\HaxeToolkit\haxe\lib\openfl\8,9,2\src" />
+    <class path="src" />
+    <class path="bin\html5\haxe" />
+  </classpaths>
+  <!-- Build options -->
+  <build>
+    <option directives="lime=7.6.0&#xA;actuate=1.8.9&#xA;SingletonInterface=1.1.2&#xA;singletoninterface=1.1.2&#xA;haxeui-openfl=0.0.2&#xA;haxeui-core=0.0.3&#xA;hscript=2.3.0&#xA;openfl=8.9.2&#xA;tools=7.6.0&#xA;ANDROID_SDK=E:\Android\SDKS\android-sdk-windows&#xA;ANDROID_SETUP=true&#xA;lime-canvas&#xA;ANDROID_NDK_ROOT=E:\Android\SDKS\android-ndk-r10e&#xA;howlerjs&#xA;no-compilation&#xA;openfl-html5&#xA;lime-webgl&#xA;lime-dom&#xA;lime-howlerjs&#xA;lime-html5&#xA;JAVA_HOME=C:\Program Files (x86)\Java\jre1.8.0_161&#xA;fdb&#xA;html5&#xA;web&#xA;no-deprecation-warnings&#xA;html5" />
+    <option flashStrict="False" />
+    <option noInlineOnDebug="False" />
+    <option mainClass="ApplicationMain" />
+    <option enabledebug="True" />
+    <option additional="--macro lime._internal.macros.DefineMacro.run()&#xA;--macro openfl._internal.macros.ExtraParams.include()&#xA;--remap flash:openfl&#xA;-dce full" />
+  </build>
+  <!-- haxelib libraries -->
+  <haxelib>
+    <library name="hscript" />
+  </haxelib>
+  <!-- Class files to compile (other referenced classes will automatically be included) -->
+  <compileTargets>
+    <compile path="src\Main.hx" />
+  </compileTargets>
+  <!-- Paths to exclude from the Project Explorer tree -->
+  <hiddenPaths>
+    <hidden path="obj" />
+  </hiddenPaths>
+  <!-- Executed before build -->
+  <preBuildCommand>"$(CompilerPath)/haxelib" run lime build "$(OutputFile)" $(TargetBuild) -$(BuildConfig) -Dfdb</preBuildCommand>
+  <!-- Executed after build -->
+  <postBuildCommand alwaysRun="False" />
+  <!-- Other project options -->
+  <options>
+    <option showHiddenPaths="False" />
+    <option testMovie="Custom" />
+    <option testMovieCommand="" />
+  </options>
+  <!-- Plugin storage -->
+  <storage />
+</project>

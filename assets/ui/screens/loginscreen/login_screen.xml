@@ -1,0 +1,15 @@
+<vbox id="loginScreen" width="100%" height="100%"  >
+
+    <style source="style_login.css" />
+
+    <hbox id="mcLogin" width="50%" height="50%">
+        <button text="Big" style="font-size: 24px;" />
+        <button text="Color" style="font-size: 24px;color:red;" />
+        <button text="Normal" width="185" height="50" style="background-color: rgba(255,255,255,1);"/>
+        <button text="Background" style="font-size: 24px;color:red;background-color:#AAAAFF;border-color:red;" />
+        <button id="styled" text="Styled" />
+    </hbox>
+
+
+
+</vbox>

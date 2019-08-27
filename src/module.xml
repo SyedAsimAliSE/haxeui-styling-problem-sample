@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<module id="haxeui-core" priority="-2">
+    <resources>
+        <resource path="assets/icons" prefix="icons" />
+        <!--<resource path="../assets/images" prefix="images" />-->
+        <!--<resource path="../assets/ui/module/styles" prefix="styles" />-->
+    </resources>
+
+    <components>
+        <class package="com.valour.classes.ui.comps" />
+        <class package="com.valour.classes.ui.screens" />
+
+        <!-- Register components -->
+        <!--<class package="haxe.ui.components" />-->
+        <!--<class name="demo.InputWidget" alias="input_widget" />-->
+    </components>
+
+    <!--<themes>
+		<global>
+			<style resource="haxeui-core/styles/global.css" />
+		</global>
+		<default>
+			<style resource="haxeui-core/styles/default/main.css" />
+		</default>
+		<native parent="default">
+			<style resource="haxeui-core/styles/native/main.css" />
+		</native>
+	</themes>-->
+
+</module>
