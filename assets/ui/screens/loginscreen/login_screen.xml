@@ -1,14 +1,39 @@
-<vbox id="loginScreen" width="100%" height="100%"  >
+<vbox id="loginScreen" width="100%" height="100%" style="padding:15px; margin:25px;">
 
-    <style source="style_login.css" />
+	<style source="style_login.css" />
 
-    <hbox id="mcLogin" width="50%" height="50%">
-        <button text="Big" style="font-size: 24px;" />
-        <button text="Color" style="font-size: 24px;color:red;" />
-        <button text="Normal" width="185" height="50" style="background-color: rgba(255,255,255,1);"/>
-        <button text="Background" style="font-size: 24px;color:red;background-color:#AAAAFF;border-color:red;" />
-        <button id="styled" text="Styled" />
-    </hbox>
+	<vbox width="100%">
+		<label id="loginScreenTitle" style="padding:5px; color:white;" text="THIS IS LOGIN SCREEN" horizontalAlign="center" />
+	</vbox>
+
+	<vbox id="mcLogin">
+		<label id="mcLoginTitle" style="padding:5px; margin:5px; color:white;" text="This is [mcLogin] vbox & expecting purple color in the background also note that this isn't center aligning with loginScreen" horizontalAlign="center" />
+		
+		<hbox width="500" height="500">
+			
+			<vbox width="100%" height="100%" style="padding:5px; margin:5px; background-color:yellow;">
+				<label style="padding:5px; margin:5px; " text="this is first vbox" horizontalAlign="center" />
+				
+				<button text="Big" style="font-size: 24px;" />
+				<button text="Color" style="font-size: 24px;color:red;" />
+				<button text="Normal" width="185" height="50" style="background-color: rgba(255,255,255,1);" />
+				<button text="Background" style="font-size: 24px;color:red;background-color:#AAAAFF;border-color:red;" />
+				<button id="styled" text="Styled" />
+			</vbox>
+			
+			<vbox width="100%" height="100%" style="padding:5px; margin:5px; background-color:blue;">
+				<label style="padding:5px; margin:5px; color:white;" text="this is second vbox, this box seems out of mcLogin box ! " horizontalAlign="center" />
+				
+				<button text="Big" style="font-size: 24px;" />
+				<button text="Color" style="font-size: 24px;color:red;" />
+				<button text="Normal" width="185" height="50" style="background-color: rgba(255,255,255,1);" />
+				<button text="Background" style="font-size: 24px;color:red;background-color:#AAAAFF;border-color:red;" />
+				<button id="styled" text="Styled" />
+			</vbox>
+		</hbox>
+
+
+	</vbox>
 
 
 

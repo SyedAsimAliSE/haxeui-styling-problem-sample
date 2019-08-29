@@ -39,16 +39,21 @@ class MainScreen extends BaseScreen
 	{
 		trace("MAIN VIEW " + this);
 
-		//percentWidth = 100;
-		//percentHeight = 100;
+		//After enabling these the main screen started getting styles :) 
+		percentWidth = 100;
+		percentHeight = 100;
 
-		//this is the main screen holder
-		_screenHolder = screenHolder;
-
-		//_screenHolder.addComponent(new LoginView());
-		//trace(_screenHolder.numChildren);
-		//trace(_screenHolder.numComponents);
-
+		
+		//if i use instance generated from xml, it will be added way before main screen instance.
+		//_screenHolder = screenHolder; 
+		
+		//fix 
+		_screenHolder = new VBox();
+		this.addComponent(_screenHolder);
+		_screenHolder.percentWidth = 100;
+		_screenHolder.percentHeight = 100;
+		
+		 
 		AppService.instance.registerEvent(AppEvents.ON_CHANGE_SCREEN, onChangeScreen);
 
 		showScreen(Screens.LOGIN_SCREEN);

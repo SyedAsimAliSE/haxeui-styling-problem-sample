@@ -23,10 +23,13 @@ class LoginScreen extends BaseScreen
 
 	override public function initUI():Void
 	{
+		percentWidth = 100; //without these lines no stytling
+		percentHeight = 100;
 
-		//this.horizontalAlign = "center";
-		//this.verticalAlign = "center";
+		mcLogin.horizontalAlign = "center";
+		mcLogin.verticalAlign = "center";  ///<< ---- this is not taking any effect
 
+		mcLogin.backgroundColor = 0x6633FF; // i am assigning this to whole vBox but it is ignoring one of the box in it
 	}
 
 	override public function load():Void
